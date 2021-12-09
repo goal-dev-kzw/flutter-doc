@@ -1,0 +1,27 @@
+ Scaffold(
+        appBar: AppBar()
+    )
+      
+
+/***************  AppBar Widget ***************/
+
+
+AppBar(
+          title: Text('Just 4 U'),
+          backgroundColor: Colors.blue[800],
+          elevation: 0,
+          centerTitle: true,
+           leading: IconButton(
+               onPressed: (){},
+               icon:Icon(
+               Icons.batch_prediction_sharp,
+               size: 30,
+             )),
+          actions: [
+            IconButton(onPressed: (){}, icon: Icon(Icons.transfer_within_a_station_outlined)),
+            IconButton(onPressed: (){}, icon: Icon(Icons.facebook_sharp))
+          ],
+     ),
+     
+
+

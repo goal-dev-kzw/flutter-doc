@@ -1,0 +1,90 @@
+ Scaffold(
+        floatingActionButton : FloatingActionButton(),
+         floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
+    )
+      
+
+/***************  FloatingActionButton Widget With Text  ***************/
+
+FloatingActionButton(
+          onPressed: () {  },
+          child: Text('Click'),
+          backgroundColor: Colors.redAccent,
+          splashColor : Colors.yellow
+    )
+
+
+
+
+
+/***************  FloatingActionButton Widget With Icon  ***************/
+
+FloatingActionButton(
+          onPressed: () {  },
+          child: Icon(Icons.chat),
+          backgroundColor: Colors.blue[800],
+          splashColor: Colors.yellow,
+    )
+
+
+
+
+
+/***************  FloatingActionButton Widget With RoundedRectangleBorder  ***************/
+
+FloatingActionButton(
+          onPressed: () {  },
+          child: Icon(Icons.chat),
+          backgroundColor: Colors.blue[800],
+          splashColor: Colors.yellow,
+          shape: RoundedRectangleBorder(),
+          )
+-----------------------------------------------------------------------------------------------------------
+
+=>     shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.all(Radius.circular(15))
+            ),
+         
+=>     shape: RoundedRectangleBorder(),    
+
+=>     shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.all(Radius.circular(15)), 
+            side: BorderSide(color: Colors.black,width:4)
+          ),
+
+
+
+
+
+
+/***************  FloatingActionButton.extended Widget  ***************/
+
+FloatingActionButton(
+          onPressed: () {  },
+          child: Text('Click'),
+          backgroundColor: Colors.redAccent,
+          splashColor : Colors.yellow
+    )
+
+
+
+
+
+/***************  FloatingActionButtonLocation Widget  ***************/
+
+    floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
+                                                                                                        .centerFloat,
+                                                                                                        .centerTop,
+                                                                                                        .endTop,
+                                                                                                        .startFloat,
+                                                                                                        .startTop,
+                                                                                                        .centerDocked
+
+
+
+
+
+
+
+
+

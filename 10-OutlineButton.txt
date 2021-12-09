@@ -1,0 +1,32 @@
+/***************  OutlineButton Widget ***************/
+
+    OutlineButton(
+        onPressed: (){},
+        child: Text('Outline Button'),
+        textColor: Colors.red,
+        borderSide: BorderSide(
+            color: Colors.blue,
+            width: 5
+        ),
+        splashColor: Colors.blue,
+        highlightColor: Colors.red,
+        )
+
+
+
+
+
+/***************  OutlineButton.icon Widget (icon and Text Button) ***************/
+
+    OutlineButton.icon(
+            onPressed: (){},
+            label:Text('mail me'),
+            icon : Icon(Icons.mail),
+            textColor: Colors.red,
+            borderSide: BorderSide(
+              color: Colors.blue,
+              width: 5
+            ),
+            splashColor: Colors.blue,
+            highlightColor: Colors.red,
+         )

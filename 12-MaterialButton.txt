@@ -1,0 +1,14 @@
+
+/***************  MaterialButton Widget ***************/
+
+        MaterialButton(
+            onPressed: (){},
+            height: 60,
+            minWidth: 190,
+            child: Text('Material Button'),
+            textColor: Colors.red,
+            color : Colors.lightGreen,
+            disabledColor: Colors.grey,
+            splashColor: Colors.blue,
+            highlightColor: Colors.red,
+         )

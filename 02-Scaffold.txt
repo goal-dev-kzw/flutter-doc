@@ -1,0 +1,27 @@
+
+/***************  Scaffold Widget  ***************/
+
+
+
+class App extends StatelessWidget {
+  const App({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return  MaterialApp(
+      debugShowCheckedModeBanner: false,
+      
+      home: Scaffold(
+        backgroundColor : Colors.blue,
+        appBar: AppBar(...),
+        body: Center(child : Text('Welcome To My First App')),
+        floatingActionButton : FloatingActionButton(
+          onPressed: () {  },
+          child: Text('Click')
+          )
+        )
+      );
+  }
+}

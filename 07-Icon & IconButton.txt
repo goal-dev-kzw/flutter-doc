@@ -1,0 +1,19 @@
+
+/***************  Icon Widget  ***************/
+
+ Icon(Icons.chair,
+        color : Colors.lightBlue,
+        size:50
+    )
+
+
+
+
+
+    /***************  IconButton Widget (Icon only Button)  ***************/
+
+IconButton(
+    onPressed: (){},
+    icon: Icon(Icons.facebook_sharp),
+    color : Colors.amber
+    )

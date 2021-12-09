@@ -1,0 +1,22 @@
+/***************  FloatingActionButton.extended Widget  ***************/
+
+    Text('Welcome To My First App',
+             style: TextStyle(
+                color: Colors.white,
+                backgroundColor: Colors.blue[800],
+                wordSpacing: 2,
+                letterSpacing: 3,
+                fontSize: 25,
+                fontStyle: FontStyle.normal,
+                fontWeight: FontWeight.bold,
+            ),
+            textDirection: TextDirection.ltr,
+            textAlign: TextAlign.justify,
+         )
+
+
+
+=> fontStyle : FontStyle.normal / italic
+=> fontWeight : FontWeight.bold / w100-w900
+=> textDirection : TextDirection.rtl / ltr
+=> textAlign : TextAlign.end / center / end / left / right / start / justify

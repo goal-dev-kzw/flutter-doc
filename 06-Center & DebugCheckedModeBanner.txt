@@ -1,0 +1,22 @@
+
+
+/***************  Center Widget  ***************/
+
+   Center(
+       child : 
+   )
+
+
+
+
+
+/***************  DebugShowCheckedModeBanner  ***************/
+
+    MaterialApp(
+        debugShowCheckedModeBanner : false,
+        title: ' ',
+        home: 
+    )
+
+
+

@@ -1,0 +1,28 @@
+/***************  FlatButton Widget ***************/
+
+     FlatButton(
+            onPressed: (){},
+            child: Text('click'),
+            textColor: Colors.red,
+            color : Colors.lightGreen,
+            disabledColor: Colors.grey,
+            splashColor: Colors.blue,
+            highlightColor: Colors.red,
+         )
+
+
+
+
+
+/***************  FlatButton.icon Widget (icon and Text Button) ***************/
+
+    FlatButton.icon(
+            onPressed: (){},
+            icon: Icon(Icons.mail),
+            label: Text('mail me'),
+            textColor: Colors.red,
+            color : Colors.lightGreen,
+            disabledColor: Colors.grey,
+            splashColor: Colors.blue,
+            highlightColor: Colors.red,
+         )

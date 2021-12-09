@@ -1,0 +1,10 @@
+/***************  CupertinoButton Widget ***************/
+    
+     CupertinoButton(
+            onPressed: (){},
+            pressedOpacity: 0.7,
+            borderRadius: BorderRadius.circular(20),
+            color : Colors.lightBlue,
+            disabledColor: Colors.grey, 
+            child: Text('click'),
+         )
