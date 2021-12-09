@@ -9,4 +9,5 @@
             child: Text('click'),
          )
 
-         Containerက width , height မသတ္မွတ္ရင္
+Container က width, height မသတ်မှတ်ရင် သူ့ child ရဲ့ size အတိုင်းနေရာယူပါတယ်။
+Container ရဲ့ Parent အတိုင်း Width , Height တွေ stretch လုပ်ချင်ရင်
