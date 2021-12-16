@@ -1,0 +1,51 @@
+
+/*************** Checkbox Widget ***************/
+
+
+class NewCheckBox extends StatefulWidget {
+  const NewCheckBox({Key? key}) : super(key: key);
+
+  @override
+  _NewCheckBoxState createState() => _NewCheckBoxState();
+}
+
+class _NewCheckBoxState extends State<NewCheckBox> {
+  var checkbox1 = false;
+  void checkboxChange1(val) {
+    setState(() {
+      checkbox1 = val;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Checkbox(
+      value: checkbox1, 
+      onChanged: checkboxChange1,);
+  }
+}
+
+
+
+
+
+/*************** CheckboxListTile Widget ***************/
+
+CheckboxListTile(
+      value: checkbox1, 
+      onChanged: checkboxChange1,
+      title: Text('Male'),
+      subtitle: Text('If you are a boy, check it'),
+      dense: false,
+      isThreeLine: false,
+      controlAffinity: ListTileControlAffinity.platform,  
+      checkColor: Colors.white,
+      activeColor: Colors.green,
+      secondary: Icon(Icons.male_rounded,size:36),
+      contentPadding: EdgeInsets.all(10),
+      tileColor : Colors.blue[100]
+      );
+
+
+
+=>     controlAffinity: ListTileControlAffinity.platform,  (platform / leading / trailing)

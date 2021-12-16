@@ -1,0 +1,59 @@
+
+/*************** DropdownButton Widget ***************/
+
+
+class Dropdown extends StatefulWidget {
+  const Dropdown({Key? key}) : super(key: key);
+
+  @override
+  _DropdownState createState() => _DropdownState();
+}
+
+class _DropdownState extends State<Dropdown> {
+  List<String> languages = ['English', 'Japanese', 'Chinese', 'Spanish'];
+  dynamic selectedLanguage = null;
+  @override
+  Widget build(BuildContext context) {
+    return DropdownButton(
+      items: languages.map((e) {
+        return DropdownMenuItem(
+          value: e,
+          child: Text(e),
+        );
+      }).toList(),
+      onChanged: (value) {
+        setState(() {
+          selectedLanguage = value;
+          print(selectedLanguage);
+        });
+      },
+      value: selectedLanguage,
+      hint: Text('Select your Language'),
+      elevation: 4,
+      isExpanded: true,
+      iconSize: 40,
+    );
+  }
+}
+
+
+
+
+
+/*************** DropdownButtonFormField Widget ***************/
+
+   DropdownButtonFormField(
+          decoration : InputDecoration(...),
+
+          // properties same as DropdownButton()
+)
+
+
+
+
+
+/*************** DropdownButtonHideUnderline Widget ***************/
+
+    DropdownButtonHideUnderline(
+      child : DropdownButton(.....)
+    )

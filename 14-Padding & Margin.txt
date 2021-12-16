@@ -1,0 +1,23 @@
+
+/*************** Padding & Margin  Properties & Padding Widget ***************/
+
+  body : Container(
+      padding : EdgeInsets.all(20),
+      child : Text('hello'),
+      color : Colors.grey
+  )
+
+ =>     margin/padding : EdgeInsets.symmetric( horizontal:30, vertical:10 )
+ =>     margin/padding : EdgeInsets.fromLTRB( 10,20,40,30 )  // left , top, right, bottom 
+ =>     margin/padding : EdgeInsets.all( 30 )
+ =>     margin/padding : EdgeInsets.only( left : 20, bottom : 10, right : 5  )
+
+
+
+
+We can use padding not only as properties but also as Widget...
+
+    body: Padding(
+        padding : EdgeInsets.all(90),
+        child : Text('hello')
+    )

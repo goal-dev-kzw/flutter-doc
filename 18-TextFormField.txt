@@ -1,0 +1,39 @@
+
+/*************** TextFormField Widget ***************/
+
+ TextFormField(
+      autocorrect: false,
+      textInputAction: TextInputAction.search,
+      controller: null,
+      textAlign: TextAlign.right,
+      textDirection: TextDirection.rtl,
+      autofocus: false,
+      cursorColor: Colors.black,
+      // maxLines: 5,
+      maxLength: 10,
+      style: TextStyle(
+        color: Colors.red,
+        letterSpacing: 5,
+        decorationStyle: TextDecorationStyle.dashed,
+      ),
+      decoration: InputDecoration(.....),
+      keyboardType: TextInputType.datetime,
+      obscureText: true,
+      onChanged: null,
+      onTap: null,
+      onEditingComplete: null,
+    );
+
+
+
+
+=> textInputAction : TextInputAction.send  (send/search)
+=> decorationStyle : TextDecorationStyle.dashed ( dashed/ wavy / solid )
+=> keyboardType : TextInputType.datetime (emailAddress / multiline / phone / number / text / url)
+
+
+
+
+=> onChanged - works every input data change
+=> onEditingComplete - works after pressing enter
+=> onTap - after downing cursor

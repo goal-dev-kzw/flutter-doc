@@ -1,0 +1,38 @@
+
+/*************** TextEditingController ***************/
+
+
+class ExampleTextEditingController extends StatefulWidget {
+  const ExampleTextEditingController({Key? key}) : super(key: key);
+
+  @override
+  _ExampleTextEditingControllerState createState() =>
+      _ExampleTextEditingControllerState();
+}
+
+class _ExampleTextEditingControllerState
+    extends State<ExampleTextEditingController> {
+
+  TextEditingController _name = TextEditingController();
+  String myName = '';
+
+  void clickMe(){
+    setState(() {
+      myName = _name.text;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Text('My name is ${myName}'),
+        TextFormField(
+          controller: _name,
+        ),
+        FlatButton(onPressed: clickMe, child: Text('click me'),color: Colors.blue, )
+      ],
+    );
+
+  }
+}

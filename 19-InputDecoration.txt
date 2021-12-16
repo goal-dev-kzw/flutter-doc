@@ -1,0 +1,73 @@
+
+/*************** InputDecoration Widget ***************/
+
+    TextFormField(
+        decoration: InputDecoration(
+        suffixIcon : Icon(Icons.blender),
+        suffixText: 'Enter your data',
+        suffixStyle: TextStyle(
+          fontSize: 10,
+          color: Colors.green
+        ),
+        prefixIcon: Icon(Icons.eco_outlined),
+        helperText: 'eg.blah blah',
+        hintText: 'Enter Blah Blah',
+        labelText: 'Label blah',
+        labelStyle: TextStyle(),
+        filled: true,
+        fillColor: Colors.white,
+        contentPadding: EdgeInsets.all(10),
+        counterText: 'Test Label',
+        focusedBorder: OutlineInputBorder(
+          borderSide: BorderSide(
+            color : Colors.green,
+            width: 2,
+            style: BorderStyle.solid,
+          )
+        ),
+         enabledBorder: UnderlineInputBorder(
+          borderSide: BorderSide(
+            color : Colors.green,
+            width: 2,
+            style: BorderStyle.solid,
+          )
+        )
+      ),
+    )
+
+
+
+
+=> enabledBorder : OutlineInputBorder()
+=> enabledBorder : UnderlineInputBorder()
+=> enabledBorder: InputBorder.none
+
+
+=> focusedBorder : OutlineInputBorder()
+=> focusedBorder : UnderlineInputBorder()
+=> focusedBorder: InputBorder.none
+
+
+=> enabledBorder : OutlineInputBorder(
+          borderSide : BorderSide(
+            color : Colors.green,
+            width : 2.0,
+            style : BorderSide.solid
+          ),
+          borderRadius : BorderRadius.circular(20),
+      )
+
+
+=>  focusedBorder : UnderlineInputBorder(
+          borderSide : BorderSide(
+            color : Colors.green,
+            width : 2.0,
+            style : BorderSide.solid
+          ),
+          borderRadius : BorderRadius.circular(20),
+      )
+
+
+=> decoration : InputDecoration(
+            prefix : Image.asset('images/index.png', width : 50, height : 50)
+    )

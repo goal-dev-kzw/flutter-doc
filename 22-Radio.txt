@@ -1,0 +1,56 @@
+
+/*************** RadioListTile Widget ***************/
+
+
+class NewRadio extends StatefulWidget {
+  const NewRadio({Key? key}) : super(key: key);
+
+  @override
+  _NewRadioState createState() => _NewRadioState();
+}
+
+class _NewRadioState extends State<NewRadio> {
+
+  var gender = ''; 
+
+  void radioChecker(val) {
+    setState(() {
+      gender = val;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children:[
+        RadioListTile(value: 'Male', groupValue: gender, onChanged: radioChecker,title: Text('Male'),),
+        RadioListTile(value: 'Female', groupValue: gender, onChanged: radioChecker,title: Text('Female')),
+        RadioListTile(value: 'Others', groupValue: gender, onChanged: radioChecker,title: Text('Others')),
+      ]
+    );
+  }
+}
+
+
+
+
+
+/*************** RadioListTile Widget ***************/
+
+    RadioListTile(
+          value: 'Male', 
+          groupValue: gender, 
+          onChanged: radioChecker,
+          title: Text('Male'),
+          subtitle: Text('If you are a boy, check it'),
+          dense: false,
+          isThreeLine: false,
+          controlAffinity: ListTileControlAffinity.platform,
+          activeColor: Colors.green,
+          secondary: Icon(Icons.male_rounded,size:36),
+          contentPadding: EdgeInsets.all(10),
+          tileColor : Colors.blue[100]
+        ),
+
+
+=>     controlAffinity: ListTileControlAffinity.platform,  (platform / leading / trailing)

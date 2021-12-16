@@ -1,13 +1,154 @@
 /***************  All About => Container Widget ***************/
     
-     CupertinoButton(
-            onPressed: (){},
-            pressedOpacity: 0.7,
-            borderRadius: BorderRadius.circular(20),
-            color : Colors.lightBlue,
-            disabledColor: Colors.grey, 
-            child: Text('click'),
-         )
+      Container(
+          padding: EdgeInsets.all(20),
+          margin: EdgeInsets.all(10),
+          height: 200,
+          width:200,
+          color : Colors. blue,
+          child:Text('Something'),
+          alignment: Alignment.topRight,
+          decoration: BoxDecoration(...),
+        )
 
-Container က width, height မသတ်မှတ်ရင် သူ့ child ရဲ့ size အတိုင်းနေရာယူပါတယ်။
-Container ရဲ့ Parent အတိုင်း Width , Height တွေ stretch လုပ်ချင်ရင်
+=> Container က width, height မသတ်မှတ်ရင် သူ့ child ရဲ့ size အတိုင်းနေရာယူပါတယ်။
+
+=> Container ရဲ့ Parent အတိုင်း Width , Height တွေ stretch လုပ်ချင်ရင်
+                height : double.infinity
+                width : double.infinity
+
+
+
+
+
+
+/*************** BoxDecoration Widget (color) ***************/
+
+       Container(
+          decoration: BoxDecoration(
+            color: Colors.red,
+          ),
+        )
+
+
+
+
+/*************** BoxDecoration Widget (Border) ***************/
+
+       Container(
+          decoration: BoxDecoration(
+            border: Border.all(color: Colors.black,width: 3),
+          ),
+        )
+
+
+
+
+/*************** BoxDecoration Widget (BorderRadius) ***************/
+
+       Container(
+          decoration: BoxDecoration(
+            border: Border.all(color: Colors.black,width: 3),
+            borderRadius: BorderRadius.all(Radius.circular(18)),
+          ),
+        )
+
+
+
+
+/*************** BoxDecoration Widget (BoxShape) ***************/
+
+       Container(
+          decoration: BoxDecoration(
+               color: Colors.red,
+               shape: BoxShape.circle,
+          ),
+        )
+
+
+
+
+/*************** BoxDecoration Widget (BoxShadow) ***************/
+
+       Container(
+          decoration: BoxDecoration(
+            color : Colors.yellow,
+            BoxShadow : [ BoxShadow(blurRadius : 10)]
+          ),
+        )
+
+
+
+
+/*************** BoxDecoration Widget (LinearGradient) ***************/
+
+       Container(
+          decoration : BoxDecoration(
+            gradient: LinearGradient(
+              colors: [
+                Colors.red,
+                Colors.blue,
+                Colors.yellow
+              ],
+              begin: Alignment.centerRight,
+              end: Alignment(-1,-1)
+            )
+          ),
+        )
+
+
+
+
+
+/*************** BoxDecoration Widget (RadialGradient) ***************/
+
+       Container(
+          decoration : BoxDecoration(
+            gradient: RadialGradient(
+              colors: [
+                Colors.red,
+                Colors.blue,
+                Colors.yellow
+              ],
+              stops : [0.4,1]
+            )
+          ),
+        )
+
+
+
+
+
+/*************** BoxDecoration Widget (SweepGradient) ***************/
+
+       Container(
+          decoration : BoxDecoration(
+            gradient: SweepGradient(
+              colors: [
+                Colors.red,
+                Colors.blue,
+                Colors.yellow.
+                Colors.green,
+                Colors.red
+              ],
+              stops : [0.0 ,0.25 ,0.50 ,0.75,1]
+            )
+          ),
+        )
+
+
+/*************** BoxDecoration Widget (DecorationImage) ***************/
+
+       Container(
+          decoration : BoxDecoration(
+            image: DecorationImage(
+              fit : BoxFit.fitWidth,
+              image : NetworkImage(
+                'https://blahblah
+              )
+            )
+          ),
+        )
+
+
+=> fit : BoxFit.fitWidth, (contain,  cover , fill, fitHeight, fitWidth, scaleDown)
